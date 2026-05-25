@@ -41,11 +41,11 @@ plugins:
 
 ## Options
 
-| Option | Type | Default | Description |
-| --- | --- | --- | --- |
-| `enableLightbox` | `boolean` | `true` | Enable the lightbox modal on click. Set to `false` for wrapper + hover effects only. |
-| `wrapperClass` | `string` | `"lightbox-wrapper"` | CSS class applied to the image wrapper div. |
-| `imageClass` | `string` | `"lightbox-image"` | CSS class applied to the image element. |
+| Option           | Type      | Default              | Description                                                                          |
+| ---------------- | --------- | -------------------- | ------------------------------------------------------------------------------------ |
+| `enableLightbox` | `boolean` | `true`               | Enable the lightbox modal on click. Set to `false` for wrapper + hover effects only. |
+| `wrapperClass`   | `string`  | `"lightbox-wrapper"` | CSS class applied to the image wrapper div.                                          |
+| `imageClass`     | `string`  | `"lightbox-image"`   | CSS class applied to the image element.                                              |
 
 ## Development
 
