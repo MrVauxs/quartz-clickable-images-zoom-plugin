@@ -2,7 +2,7 @@ import type { PluggableList } from "unified";
 import type { Root, Element } from "hast";
 import type { VFile } from "vfile";
 import { visit } from "unist-util-visit";
-import type { QuartzTransformerPlugin } from "@quartz-community/types";
+import type { QuartzTransformerPlugin, BuildCtx, StaticResources } from "@quartz-community/types";
 import type { ClickableImagesOptions } from "./types";
 
 const defaultOptions: ClickableImagesOptions = {
@@ -64,10 +64,10 @@ export const ClickableImages: QuartzTransformerPlugin<Partial<ClickableImagesOpt
 
   return {
     name: "ClickableImages",
-    htmlPlugins(): PluggableList {
+    htmlPlugins(_ctx: BuildCtx): PluggableList {
       return [rehypeClickableImages(options)];
     },
-    externalResources() {
+    externalResources(_ctx: BuildCtx): Partial<StaticResources> {
       if (!options.enableLightbox) {
         return {
           css: [
