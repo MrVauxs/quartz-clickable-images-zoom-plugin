@@ -1,26 +1,10 @@
-import { QuartzTransformerPlugin, QuartzFilterPlugin, QuartzEmitterPlugin } from '@quartz-community/types';
-export { PageGenerator, PageMatcher, QuartzComponent, QuartzComponentConstructor, QuartzComponentProps, QuartzEmitterPlugin, QuartzFilterPlugin, QuartzPageTypePlugin, QuartzPageTypePluginInstance, QuartzTransformerPlugin, StringResource, VirtualPage } from '@quartz-community/types';
-import { ExampleTransformerOptions, ExampleFilterOptions, ExampleEmitterOptions, ClickableImagesOptions } from './types.js';
-export { ExampleComponent, ExampleComponentOptions } from './components/index.js';
-
-/**
- * Example transformer showing remark/rehype usage and resource injection.
- */
-declare const ExampleTransformer: QuartzTransformerPlugin<Partial<ExampleTransformerOptions>>;
-
-/**
- * Example filter that removes drafts, tagged pages, and excluded path prefixes.
- */
-declare const ExampleFilter: QuartzFilterPlugin<Partial<ExampleFilterOptions>>;
-
-/**
- * Example emitter that writes a JSON manifest of content metadata.
- */
-declare const ExampleEmitter: QuartzEmitterPlugin<Partial<ExampleEmitterOptions>>;
+import { QuartzTransformerPlugin } from '@quartz-community/types';
+export { QuartzEmitterPlugin, QuartzFilterPlugin, QuartzPageTypePlugin, QuartzTransformerPlugin, QuartzTransformerPluginInstance } from '@quartz-community/types';
+import { ClickableImagesOptions } from './types.js';
 
 /**
  * Transformer that wraps images in a clickable lightbox wrapper.
  */
 declare const ClickableImages: QuartzTransformerPlugin<Partial<ClickableImagesOptions>>;
 
-export { ClickableImages, ClickableImagesOptions, ExampleEmitter, ExampleEmitterOptions, ExampleFilter, ExampleFilterOptions, ExampleTransformer, ExampleTransformerOptions };
+export { ClickableImages, ClickableImagesOptions };
