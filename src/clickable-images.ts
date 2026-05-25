@@ -314,7 +314,7 @@ body.lightbox-open {
                     e.preventDefault();
                     const imgEl = wrapper.querySelector('.${options.imageClass}');
                     if (imgEl) {
-                      const src = imgEl.getAttribute('data-src') || imgEl.src;
+                      const src = imgEl.src;
                       const alt = imgEl.getAttribute('data-alt') || imgEl.alt;
                       openLightbox(src, alt, imgEl);
                     }
