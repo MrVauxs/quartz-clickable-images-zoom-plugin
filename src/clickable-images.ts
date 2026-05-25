@@ -2,7 +2,7 @@ import type { PluggableList } from "unified";
 import type { Root, Element } from "hast";
 import type { VFile } from "vfile";
 import { visit } from "unist-util-visit";
-import type { QuartzTransformerPlugin, BuildCtx } from "@quartz-community/types";
+import type { QuartzTransformerPlugin } from "@quartz-community/types";
 import type { ClickableImagesOptions } from "./types";
 
 const defaultOptions: ClickableImagesOptions = {
