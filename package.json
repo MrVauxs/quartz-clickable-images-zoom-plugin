@@ -111,6 +111,9 @@
           "**",
           "~~"
         ]
+      },
+      "enableLightbox": {
+        "type": "boolean"
       }
     },
     "components": {
@@ -118,6 +121,12 @@
         "displayName": "Example Component",
         "defaultPosition": "right",
         "defaultPriority": 50
+      }
+    },
+    "plugins": {
+      "ClickableImages": {
+        "displayName": "Clickable Images",
+        "description": "Wraps images in clickable lightbox overlays"
       }
     }
   },

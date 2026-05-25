@@ -38,5 +38,13 @@ interface ExampleComponentOptions {
     /** CSS class name to apply */
     className?: string;
 }
+interface ClickableImagesOptions {
+    /** CSS class added to the lightbox wrapper. */
+    wrapperClass: string;
+    /** CSS class added to the image element. */
+    imageClass: string;
+    /** Enable the lightbox modal on click. */
+    enableLightbox: boolean;
+}
 
-export type { ExampleComponentOptions, ExampleEmitterOptions, ExampleFilterOptions, ExampleTransformerOptions };
+export type { ClickableImagesOptions, ExampleComponentOptions, ExampleEmitterOptions, ExampleFilterOptions, ExampleTransformerOptions };
